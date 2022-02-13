@@ -1,0 +1,127 @@
+body{
+    --color-red: #FF605C;
+    --color-orange: #FFBD44;
+    --color-green: #00CA4E;
+    --color-darkGray: #383838;
+    --color-lightGray: #585858;
+    --color-lighterGray: #ddd;
+    --color-seaGreen: #009579;
+
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-darkGray);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 400px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+.formHidden{
+    display: none;
+}
+
+.form >:first-child{
+    margin-top: 0;
+}
+.form >:last-child{
+    margin-bottom: 0;
+}
+
+.formTitle{
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.formMessage{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.formMessageSuccess{
+    color: var(--color-green);
+}
+.formMessageError{
+    color: var(--color-red);
+}
+
+.formInputGroup{
+    margin-bottom: 1rem;
+}
+
+.formInput{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid black;
+    outline: none;
+    font-size: 1.5rem;
+    background-color: var(--color-lighterGray);
+    transition: background 200ms, border-color 200ms;
+}
+
+.formInput:focus{
+    background-color: white;
+    border-color: var(--color-seaGreen);
+    border-width: 3px;
+}
+
+.formInputError{
+    color: var(--color-red);
+    border-color: var(--color-red);
+}
+
+.formInputErrorMessage{
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--color-red);
+}
+
+.formBtn{
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--color-seaGreen);
+    transition-duration: 100ms;
+}
+
+.formBtn:hover{
+    background-color: white;
+    border: 2px solid var(--color-seaGreen);
+    color: var(--color-seaGreen);
+}
+
+.formBtn:active{
+    transform: scale(0.95);
+}
+
+.formText{
+    text-align: center;
+}
+
+.formLink{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.formLink:hover{
+    text-decoration: underline;
+}
